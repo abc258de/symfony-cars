@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Admin{% endblock %}
+
+{% block body %}
+
+<div class="margins">
+  <div class="section_top_page">
+    <div class="section1_members">
+     
+        <div class="members_links">
+            <h2>Admin</h2>
+                <ol>
+                    <li> Update Objects (https://127.0.0.1:8001/salon/update/id)</li>
+                    <li> <div id="links"><a href={{ path('app_salon_create') }}>Add new objects</a> (https://127.0.0.1:8001/salon/create)</div></li>
+                    <li> Delete existing objects (https://127.0.0.1:8001/salon/delete/id) </li>             
+                </ol>
+        </div>
+
+        <div class="members_help">
+            <h2>CRUD Process</h2>
+                <ul>
+                    <li>Click the respective function on the left to open a new page. </li>
+                    <li>A template form will be displayed so you can make the changes you wish. </li>
+                    <li>Click the button below the form to save your changes.</li>
+                    <li>Depending on the changes made, you will then be redirected to another page. </li><br>
+                    <li>If there is no link, you need to copy the URL and add afterwards at the URL itself the id </li></ul><br>
+        </div>
+
+
+    </div>
+  </div>
+  {# end section top page #}
+</div>
+{# end margins #}
+
+
+
+{% endblock %}

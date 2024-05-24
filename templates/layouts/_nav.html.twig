@@ -1,0 +1,63 @@
+
+
+<div class="navbars">
+  
+  <div class="nav_contacts">
+
+    <div class="wrap_phone">
+      <div class="icon_nav_cont"> <i class="fa-solid fa-phone-volume"></i>
+      </div>
+      <div class="telephone">
+      <p>+32/2/1234567</p>
+      </div>
+    </div>
+
+    <div class="wrap_map">
+      <div class="icon_nav_cont"> <i class="fa-solid fa-location-dot"></i>
+      </div>
+      
+      <div class="wrap_address">
+        <div class="address_street">
+        <p class="address_spaces">Av. Louise</p></div>
+        <div class="address_number">
+        <p class="address_spaces"> 350, </p></div>
+        <div class="address_zip">
+        <p class="address_spaces"> 1000-</p></div>
+        <div class="address_city">
+        <p span style="margin-right:3rem">Brussels</p></div>
+      </div>
+    </div>
+
+  </div>
+
+{# --------------------- #}
+
+  <div class="nav_nav">
+    <div class="logo">
+      <div id="logo"><a  class = "nav-link {{app.current_route == 'home' ? 'active' : ''}}" href={{ path('home') }}><img src={{ asset('img/logo2.jpg') }} alt="logo"></div>
+      {# src={{ asset('images/logo2.jpg') }} #}
+      <p>AutoCar</p></a>
+    </div>
+    <div class="titles">
+        <div id="titles"><a  class = "nav-link {{app.current_route == 'home' ? 'active' : ''}}" href={{ path('home') }}>Home</a></div>
+
+        <div  id="titles"><a class = "nav-link {{app.current_route starts with 'app_salon' ? 'active' : ''}}" href={{ path('app_salon') }}>Salon</a></div>
+
+        <div id="titles"><a   class = "nav-link {{app.current_route == 'home' ? 'active' : ''}}" href={{ path('home') }}>Services</a></div>
+        
+        <div id="titles"><a  class = "nav-link {{app.current_route == 'app_members' ? 'active' : ''}}" href={{ path('app_members') }}>Members</a></div>
+
+        <div id="titles"><a  class = "nav-link {{app.current_route == 'home' ? 'active' : ''}}" href={{ path('home') }}>Contact</a></div>
+    </div>
+  </div>
+ 
+</div>
+{# <script>
+    // Define la función de recarga de página y agrega el manejador de eventos al enlace
+    function recargarPaginaUnaVez() {
+        location.reload(true);
+        document.getElementById("tu_enlace").removeEventListener("click", recargarPaginaUnaVez);
+    }
+
+    document.getElementById("tu_enlace").addEventListener("click", recargarPaginaUnaVez);
+</script> #}

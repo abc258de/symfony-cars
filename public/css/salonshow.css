@@ -1,0 +1,33 @@
+.section1_show{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 20px;
+  margin-top: 25PX;
+  /* background-color: chocolate; */
+    h2{
+      font-family: aldrich, sans-serif;
+    }
+}
+ 
+.show_carname{
+  padding-top: 25px;
+}
+
+table {
+  border-collapse: collapse;
+  min-width: 100%;
+}
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+  min-width: 110px;
+  text-align: center;
+}
+
+#car_descrption{
+  text-align: left;
+  padding: 8px 20px;
+}
+

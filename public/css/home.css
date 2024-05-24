@@ -1,0 +1,393 @@
+.section_top_page{
+  margin-top: 100px;
+  font-family: aldrich, sans-serif;
+}
+
+/* VERSION CAROUSEL 1 _______________________________________________________________ */
+
+.section1{
+  display: flex; 
+  flex-direction: row;
+  gap: 2%;
+  width: 100%;
+  height: 555px;
+  font-family: aldrich, sans-serif;
+  /* background-color: darkorange; */
+  position:relative;
+
+  /* background: url(../images/bannerphoto.jpg);  */
+  background-size: cover;
+  /* -o-object-fit: fill;
+  object-fit: fill; */
+  padding: 0px;
+  background-position: center center; 
+  background-color: rgb(248, 245, 245);
+}
+
+.carousel-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Hide overflow to hide extra slides */
+  position: relative;
+}
+
+.carousel-slide {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0; /* Initially hide all slides */
+  transition: opacity 0.5s ease; /* Smooth transition for fade effect */
+}
+
+.carousel-slide.active {
+  opacity: 1; /* Show active slide */
+}
+
+
+/* ----------------------------- */
+
+.intro{
+  border: none; 
+  border-radius: 30px;
+  /* color: rgba(0, 0, 0, 0.792);
+  background-color: rgba(237, 235, 235, 0.4); */
+  font-size: 42px;
+  /* border: 3px solid rgb(44, 17, 142); */
+  padding: 10px;
+  padding-top: 1px;
+  margin-top: 50px;
+  margin-bottom: 70px;
+  margin-left: 30px;
+  width: 46%;
+  z-index: 10;
+    h1{
+      margin-top: 15px;
+    }
+  }
+
+.buttonss1 {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px; 
+}
+
+#btn1s1 {
+    color: white;
+    filter: saturate(200%);
+    font-size: 20px;
+    /* background-color: rgb(10, 71, 151); */
+    background-color: rgb(202,20,0);
+    padding: 15px 30px; 
+    border-radius: 30px;
+    border: none;
+    font-family: aldrich, sans-serif;
+}
+
+#btn1s1:hover {
+      background-color: black;
+      color: white;
+} 
+
+#btn2s1 {   
+
+    color: white;
+    /* filter: saturate(200%); */
+    /* filter: hue-rotate(45deg); */
+    /* filter: brightness(150%) contrast(120%); */
+    font-size: 20px;
+    background-color: rgb(240, 111, 96);
+    padding: 15px 30px; 
+    border: none; 
+    border-radius: 30px;
+    font-family: aldrich, sans-serif;
+}
+
+#btn2s1:hover {
+  background-color: rgb(68, 58, 58);
+  color: white;
+  /* filter: saturate(200%); */
+  /* filter: hue-rotate(45deg); */
+}
+
+/* VERSION CAROUSEL 2 _______________________________________________________________ */
+
+
+
+
+
+
+/* ----------------------------- */
+
+.intro-img {
+  /* border: 3px solid red; */
+/* }
+
+#img_home{ */
+  /* margin-right: 150px; */
+  display: flex;
+  /* justify-content:right; */
+  height: 300px;
+  width: 52%;
+  /* margin-right: 40px; */
+  background: url(/images/cardealer2.jpg);
+  background-size: cover ;
+  background-position-y: center;
+  border-radius: 6px;
+  }
+
+
+
+
+
+/* section2 ----------------------------- */  
+
+.margins{
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.section2{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 25PX;
+  /* background-color: chocolate; */
+    h2{
+      font-family: aldrich, sans-serif;
+    }
+  }
+
+.txt1, .txt2, .txt3, .txt4{
+  /* border: 1px solid rgb(46, 17, 160); */
+  border-radius: 30px;
+  padding: 0PX 15PX;
+  text-align: justify; 
+  /* margin-bottom: 40px; */
+}
+
+.column1, .column2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0REM;
+}
+
+.txt2 {
+  margin-left: 40px;
+  /* margin-right: 10px; */
+  background-color: white;
+}
+
+.txt3 {
+  margin-left: 40px;
+  /* margin-right: 10px; */
+  background-color: white;
+}
+
+.promotions{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  /* justify-content: left; */
+  background-color: rgb(21, 19, 19);
+  /* background-color: rgb(240, 111, 96); */
+  /* background-color: rgb(68, 58, 58); */
+  color: white;
+  height: 180px;
+}
+
+/* IMAGE ZOOM---------------------------- */
+
+/* .txt3_section2_img {
+  display: flex;
+  flex-direction: row;
+  width: 350px;
+  height: 180px;
+  background: url(/images/porsche.jpg);
+  background-size: cover;
+  background-position-y: center;
+  border-radius: 6px;
+  } */
+
+
+/* Modal styles */
+.modalddd {
+  display: none;
+  /* position: fixed; */
+  /* z-index: 1; */
+  /* left: 0;
+  top: 0; */
+  /* width: 100%;
+  height: 100%; */
+  /* overflow: auto; */
+  /* background-color: rgba(235, 12, 12, 0.8); */
+}
+
+/* .modal-content {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 80%;
+} */
+
+/* .close {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+} */
+
+/* .close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+} */
+
+.thumbnail {
+  /* width: 350px; */
+  height: 180px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  /* border-radius: 6px; */
+}
+
+.thumbnail:hover {
+  transform: scale(1.2);
+  border-radius: 6px;
+}
+
+/* .thumbnail:focus + .modal {
+  display: flex;
+} */
+
+
+/* IMAGE CAROUSEL---------------------------- */
+
+#slideshow img{
+  flex: 0 0 auto;
+  height: 180px;
+  width: 340px;
+  /* --image-carousel-width: 340px; */
+  object-fit: cover;
+  /* border-radius: 6px; */
+  margin-left: 0px;
+  
+}
+
+#slideshow {
+  width: 380px;
+}
+
+
+/* ---------------------------- */
+
+  .promotions_description{
+    font-family: aldrich, sans-serif;
+    /* Set width, height, and other styles for the description */
+    top: 0; /* Adjust as needed */
+    left: 0;
+    /* left: var(--image-carousel-width); Use CSS variable */
+    padding: 20px; /* Add padding to prevent text from sticking to edges */
+    padding-left: 0;
+    z-index: 1; /* Ensure description is above the carousel */
+    overflow: hidden; /* Hide overflow if description exceeds container */
+  }
+
+
+/* ACCORDION */
+
+.accordion {
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      font-family: aldrich, sans-serif;
+    }
+
+/* Style the accordion header */
+.accordion-header {
+      padding: 10px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between; /* Ensure items are spaced evenly */
+      align-items: center; /* Center items vertically */
+    }
+
+
+/* FAVICON CSS + JS -------------------------- */
+
+/* Style for the accordion icon */
+.accordion-icon {
+  display: inline-block;
+  /* justify-content: right; */
+  width: 10px; 
+  height: 10px;
+  margin-right: 15px; 
+  transition: transform 0.3s ease; /* Add transition for smooth rotation */
+}    
+
+/* Rotate the accordion icon using CSS animations */
+@keyframes rotate180 {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(180deg);
+  }
+}
+
+.icon-rotated {
+  animation: rotate180 0.3s ease forwards; /* Apply the animation to rotate the icon */
+}
+
+/* ------------------------------------------ */
+
+
+/* Style the accordion content */
+.accordion-content {
+      padding: 10px;
+      display: none; /* Hide content by default */
+      background-color: #f8f3f3;
+
+    }
+
+/* Style the active state of the accordion header */
+/* .accordion-active {
+      background-color: #191818;
+      color: white;
+    } */
+
+.accordion-active + .accordion-content {
+      /* display: block;     */
+      max-height: 100%;
+}
+
+/* SLIDESHOW __________________________________________________________ */
+
+#slideshow {
+  position: relative;
+  /* width: 100%; */
+  height: 180px; /* Allow slideshow height to adjust based on image dimensions */
+}
+
+#slideshow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+  width: 100%; /* Ensure images take full width of slideshow */
+  height: 180px; /* Allow images to maintain aspect ratio */
+}
+
+#slideshow img.active {
+  opacity: 1;
+}

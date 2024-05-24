@@ -1,0 +1,139 @@
+/* BODY {margin: 0;
+background-color: rgb(240, 239, 240);
+min-height: 100dvh;
+} */
+
+/* #img_home{
+
+  margin: 0 auto;
+  height: 300px;
+} */
+
+/* NAV______________________________________________________________________ */
+
+.navbars{
+  display: flex;
+  flex-direction: column;
+  /* background-color: rgb(78, 78, 243);
+  border: 2px red solid; */
+  position: fixed;
+  top: 0px;
+  padding-top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 100
+
+}
+
+
+
+/* NAV_CONT _________________________*/
+
+.nav_contacts{
+  /* background-color: rgb(210, 75, 65); */
+  /* background-color: red; */
+  background-color: rgb(202,20,0);
+  color: white;
+  padding-top: 5px;
+  /* font-family: roboto; */
+  font-family: aldrich, sans-serif;;
+  font-size: 11px;
+  /* background-color: red; */
+  /* border: 2px rgb(55, 19, 197) solid; */
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  height: 30px;
+  /* z-index: 1; */
+  gap: 20px;
+
+    .address{
+      margin-right: 30px;
+    }
+}
+
+.wrap_phone, .wrap_map{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  font-weight: bold;
+}
+
+.wrap_address, .wrap_phone{
+  display: flex;
+  flex-direction: row;
+  /* gap: 5px; */
+  align-items: center;
+  font-weight: bold;
+}
+
+.wrap_address:hover{
+  text-decoration: underline;
+}
+
+.wrap_phone:hover{
+  text-decoration: underline;
+}
+
+.address_spaces{
+  margin-right: 2px;
+}
+
+
+
+/* NAV_NAV _________________________*/
+.nav_nav{
+  padding-top: 0px;
+  /* left: 0px; */
+  width: 100%;
+  /* background-color: red; */
+  /* border: 2px rgb(27, 174, 56) solid; */
+  /* background-color: rgb(255, 255, 255, 0.99); */
+  background-color: rgb(10, 15, 35);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  /* z-index: 1; */
+}
+
+.logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  font-family: aldrich, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+img{
+    margin-left: 30px;
+    height: 60px;
+  }
+
+.titles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:30px ;
+    /* font-family: Roboto, sans-serif; */
+    font-family: aldrich, sans-serif;
+    font-size: 20;
+    margin-right: 46px;
+
+    a {
+      /* color: rgb(0,53,110);  */
+      color: white;
+      text-decoration: none;
+      }
+  }
+   
+
+
+

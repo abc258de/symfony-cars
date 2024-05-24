@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Salon{% endblock %}
+
+{% block body %}
+
+<div class="margins">
+  <div class="section_top_page">
+    <div class="section1_salon">
+     
+        <div class="salon_carslist_carslist">
+            <h2>Salon</h2>
+
+            <ol> 
+                {% for k in carsTable %}
+                <li>
+                    <a href={{ path('app_salon_show', {id:k.id, slug:k.slug})}}>  
+                    {{k.brand}} {{k.model}} {{k.horses}} </a>
+                </li>
+ 
+                {% else %}
+                    <p>Hhmm ... Vous faites quoi?</p>  
+                {% endfor %} 
+            </ol>
+ 
+        </div>
+
+        <div class="salon_section1_text2">
+        <h2>Driving tests</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam facere odio impedit architecto. Iusto quasi blanditiis incidunt minus ea quo, quis placeat alias voluptate aut odit aperiam tenetur hic, ab natus repellat cumque, repudiandae nesciunt! Tempore, dolore? Veniam, officiis perspiciatis!</p>
+
+        <div class="salon_section1_img">
+        </div>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam facere odio impedit architecto. Iusto quasi blanditiis incidunt minus ea quo, quis placeat alias voluptate aut odit aperiam tenetur hic, ab natus repellat cumque, repudiandae nesciunt! Tempore, dolore? Veniam, officiis perspiciatis!</p>
+
+        </div>
+
+
+    </div>
+  </div>
+  {# end section top page #}
+</div>
+{# end margins #}
+
+
+
+{% endblock %}

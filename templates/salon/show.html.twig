@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{# {% block title %}{{slug}}{% endblock %} #}
+{% block title %}{{carSolo.slug}}#{{carSolo.id}}{% endblock %}
+
+
+{% block body %}
+<div class="section_top_page"> 
+<div class="margins">
+
+  <div class="show_carname"><h3>{{carSolo.brand ~  ', ' ~ carSolo.model ~  '-' ~ carSolo.horses}}</h3></div>
+  <br>
+
+      <table>
+        <thead> 
+            <tr>
+                {# <th>Slug</th> #}
+                <th>Model</th>
+                <th>Brand</th>
+                <th>Horses</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody> 
+            <tr>
+                {# <td>{{carSolo.slug}}</td> #}
+                <td>{{carSolo.model}}</td>
+                <td>{{carSolo.brand}}</td>
+                <td>{{carSolo.horses}}</td>
+                <td id="car_descrption">{{carSolo.description}}</td>
+            </tr>
+        </tbody>
+    </table> 
+
+  
+  {# {{dump (app)}} #}
+  {# {{app.current_route}}   #} 
+</div>
+</div>
+{% endblock %} 
+ 
+ 
